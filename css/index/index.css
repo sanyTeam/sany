@@ -1,5 +1,5 @@
 ._nav dl {
-	margin-top: 15px;
+	margin-top: 10px;
 }
 
 ._nav img {
@@ -10,6 +10,7 @@
 }
 
 ._nav dd {
+	margin-top: 5px;
 	text-align: center;
 	font-size: 14px;
 }
@@ -64,6 +65,13 @@
 .l_side{
 	width:80px;
 }
+.m_side{
+	padding-right: 20px;
+}
 .r_side{
 	width: 20px;
+}
+
+.property{
+	font-size: 14px;
 }

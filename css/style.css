@@ -556,13 +556,12 @@ select::-ms-expand { display: none;}
     overflow: auto;
 }
 
+/*-----------------@zdw----------*/
 
 /*背景色*/
 .bcFFF{
 	background-color: #fff;
 }
-
-
 .marT44{
 	margin-top: 44px;
 }
@@ -572,4 +571,12 @@ select::-ms-expand { display: none;}
     background-color: #fff;
     padding: 10px 15px;
     }
-
+.container{
+	padding: 0 15px;
+}
+/*小标题*/   
+.bt{
+	padding:10px 15px;
+	/*background-color: red;*/
+	font-size: 16px;
+}
