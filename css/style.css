@@ -1,0 +1,575 @@
+.ui-page-login,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.mui-content{height: 100%;}
+
+
+*{box-sizing: border-box}
+html,body{
+    height: 100%!important;
+}
+body{
+    font-family:微软雅黑;
+    background-color: #f5f5f5!important;
+}
+html,body,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:400;}
+html,body,img,iframe,abbr{border:0;}
+li{list-style:none;}
+
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+
+ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,input,button,select,keygen,legend{font:12px/1.5 "Microsoft YaHei",SimSun;color:#333;outline:0;}
+body{background:#fff;}
+a{color:#333;font-family:"Microsoft YaHei",SimSun;}
+i,em{font-style:normal;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{color:#a0a0a0;}
+input:-moz-placeholder, textarea:-moz-placeholder{color:#a0a0a0;}
+input::-moz-placeholder, textarea::-moz-placeholder{color:#a0a0a0;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder{color:#a0a0a0;}
+
+img {
+    border: none;
+}
+select {
+    border: solid 1px #000;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    padding-right: 14px;
+}
+a:hover{
+    text-decoration: none!important;
+}
+.cursor{
+    cursor: pointer;
+}
+select::-ms-expand { display: none;}
+
+.noPaddingLR{padding-left: 0!important;padding-right: 0!important;}
+.noPaddingTB{padding-top: 0!important;padding-bottom: 0!important;}
+
+
+.clearfix:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.relative{position: relative;}
+.absolute{position: absolute;}
+.border{border:1px solid #a2a2a2;}
+.bcRed{background-color: red}
+.bcBlue{background-color: blue}
+.marAuto{margin: 0 auto;}
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+.pdl5{
+    padding-left: 5px;
+}
+.pdl10{
+    padding-left: 10px;
+}
+.pdr5{
+    padding-right: 5px;
+}
+.pdr10{
+    padding-right: 10px;
+}
+
+.col-w1 {
+    width: 1%!important;
+}
+
+.col-w2 {
+    width: 2%!important;
+}
+
+.col-w3 {
+    width: 3%!important;
+}
+
+.col-w4 {
+    width: 4%!important;
+}
+
+.col-w5 {
+    width: 5%!important;
+}
+
+.col-w6 {
+    width: 6%!important;
+}
+
+.col-w7 {
+    width: 7%!important;
+}
+
+.col-w8 {
+    width: 8%!important;
+}
+
+.col-w9 {
+    width: 9%!important;
+}
+
+.col-w10 {
+    width: 10%!important;
+}
+
+.col-w11 {
+    width: 11%!important;
+}
+
+.col-w12 {
+    width: 12%!important;
+}
+
+.col-w13 {
+    width: 13%!important;
+}
+
+.col-w14 {
+    width: 14%!important;
+}
+
+.col-w15 {
+    width: 15%!important;
+}
+
+.col-w16 {
+    width: 16%!important;
+}
+
+.col-w17 {
+    width: 17%!important;
+}
+
+.col-w18 {
+    width: 18%!important;
+}
+
+.col-w19 {
+    width: 19%!important;
+}
+
+.col-w20 {
+    width: 20%!important;
+}
+
+.col-w21 {
+    width: 21%!important;
+}
+
+.col-w22 {
+    width: 22%!important;
+}
+
+.col-w23 {
+    width: 23%!important;
+}
+
+.col-w24 {
+    width: 24%!important;
+}
+
+.col-w25 {
+    width: 25%!important;
+}
+
+.col-w26 {
+    width: 26%!important;
+}
+
+.col-w27 {
+    width: 27%!important;
+}
+
+.col-w28 {
+    width: 28%!important;
+}
+
+.col-w29 {
+    width: 29%!important;
+}
+
+.col-w30 {
+    width: 30%!important;
+}
+
+.col-w31 {
+    width: 31%!important;
+}
+
+.col-w32 {
+    width: 32%!important;
+}
+
+.col-w33 {
+    width: 33%!important;
+}
+.col-w3333 {
+    width: 33.33%!important;
+}
+
+
+.col-w34 {
+    width: 34%!important;
+}
+
+.col-w35 {
+    width: 35%!important;
+}
+
+.col-w36 {
+    width: 36%!important;
+}
+
+.col-w37 {
+    width: 37%!important;
+}
+
+.col-w38 {
+    width: 38%!important;
+}
+
+.col-w39 {
+    width: 39%!important;
+}
+
+.col-w40 {
+    width: 40%!important;
+}
+
+.col-w41 {
+    width: 41%!important;
+}
+
+.col-w42 {
+    width: 42%!important;
+}
+
+.col-w43 {
+    width: 43%!important;
+}
+
+.col-w44 {
+    width: 44%!important;
+}
+
+.col-w45 {
+    width: 45%!important;
+}
+
+.col-w46 {
+    width: 46%!important;
+}
+
+.col-w47 {
+    width: 47%!important;
+}
+
+.col-w48 {
+    width: 48%!important;
+}
+
+.col-w49 {
+    width: 49%!important;
+}
+.col-w49-5{
+    width: 49.5%!important;
+}
+.col-w50 {
+    width: 50%!important;
+}
+
+.col-w51 {
+    width: 51%!important;
+}
+
+.col-w52 {
+    width: 52%!important;
+}
+
+.col-w53 {
+    width: 53%!important;
+}
+
+.col-w54 {
+    width: 54%!important;
+}
+
+.col-w55 {
+    width: 55%!important;
+}
+
+.col-w56 {
+    width: 56%!important;
+}
+
+.col-w57 {
+    width: 57%!important;
+}
+
+.col-w58 {
+    width: 58%!important;
+}
+
+.col-w59 {
+    width: 59%!important;
+}
+
+.col-w60 {
+    width: 60%!important;
+}
+
+.col-w61 {
+    width: 61%!important;
+}
+
+.col-w62 {
+    width: 62%!important;
+}
+
+.col-w63 {
+    width: 63%!important;
+}
+
+.col-w64 {
+    width: 64%!important;
+}
+
+.col-w65 {
+    width: 65%!important;
+}
+
+.col-w66 {
+    width: 66%!important;
+}
+
+.col-w67 {
+    width: 67%!important;
+}
+
+.col-w68 {
+    width: 68%!important;
+}
+
+.col-w69 {
+    width: 69%!important;
+}
+
+.col-w70 {
+    width: 70%!important;
+}
+
+.col-w71 {
+    width: 71%!important;
+}
+
+.col-w72 {
+    width: 72%!important;
+}
+
+.col-w73 {
+    width: 73%!important;
+}
+
+.col-w74 {
+    width: 74%!important;
+}
+
+.col-w75 {
+    width: 75%!important;
+}
+
+.col-w76 {
+    width: 76%!important;
+}
+
+.col-w77 {
+    width: 77%!important;
+}
+
+.col-w78 {
+    width: 78%!important;
+}
+
+.col-w79 {
+    width: 79%!important;
+}
+
+.col-w80 {
+    width: 80%!important;
+}
+
+.col-w81 {
+    width: 81%!important;
+}
+
+.col-w82 {
+    width: 82%!important;
+}
+
+.col-w83 {
+    width: 83%!important;
+}
+
+.col-w84 {
+    width: 84%!important;
+}
+
+.col-w85 {
+    width: 85%!important;
+}
+
+.col-w86 {
+    width: 86%!important;
+}
+
+.col-w87 {
+    width: 87%!important;
+}
+
+.col-w88 {
+    width: 88%!important;
+}
+
+.col-w89 {
+    width: 89%!important;
+}
+
+.col-w90 {
+    width: 90%!important;
+}
+
+.col-w91 {
+    width: 91%!important;
+}
+
+.col-w92 {
+    width: 92%!important;
+}
+
+.col-w93 {
+    width: 93%!important;
+}
+
+.col-w94 {
+    width: 94%!important;
+}
+
+.col-w95 {
+    width: 95%!important;
+}
+
+.col-w96 {
+    width: 96%!important;
+}
+
+.col-w97 {
+    width: 97%!important;
+}
+
+.col-w98 {
+    width: 98%!important;
+}
+
+.col-w99 {
+    width: 99%!important;
+}
+
+.col-w100 {
+    width: 100%!important;
+}
+
+
+.flex{display:-webkit-box!important;display: flex!important;display:-webkit-flex!important;display:-ms-flexbox!important;}
+.flex-1{-webkit-box-flex:1!important;-moz-box-flex:1!important;-ms-flex:1!important;flex:1!important;}
+.flex-v{flex-direction: column!important;-webkit-box-orient: vertical!important;-moz-box-orient: vertical!important;box-orient: vertical!important;}
+.flex-align-center{-webkit-box-align:center!important;-webkit-align-items:center!important;-ms-flex-align:center!important;align-items:center!important;}
+.flex-pack-center{-webkit-box-pack:center!important;-webkit-justify-content:center!important;-ms-flex-pack:center!important;justify-content:center!important;}
+.flex-pack-justify{-webkit-box-pack:justify!important;-webkit-justify-content:space-between!important;-ms-flex-pack:justify!important;justify-content:space-between!important;}
+.flex-pack-end{-webkit-box-pack:end!important;-webkit-justify-content:flex-end!important;-ms-flex-pack:end!important;justify-content:flex-end!important;}
+
+
+
+.bcFFF{
+    background-color: #fff!important;
+}
+/*超出显示省略号*/
+.unilineText {  /*设置文本为单行，如果超出长度用省略号代替*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    white-space: nowrap;  /*规定段落中的文本不进行换行*/
+}
+.multiLineText1 {  /*设置文本为多行，如果超出长度用省略号代替*/
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;  /*限制在一个块元素显示的文本的行数*/
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.multiLineText2 {  /*设置文本为多行，如果超出长度用省略号代替*/
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  /*限制在一个块元素显示的文本的行数*/
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size:14px;
+}
+.multiLineText3 {  /*设置文本为多行，如果超出长度用省略号代替*/
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;  /*限制在一个块元素显示的文本的行数*/
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size:14px;
+}
+.center-block{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.abTRBL{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom:50px;
+    overflow: hidden;
+}
+.hAuto{
+    height: 100%;
+    overflow: auto;
+}
+
+
+/*背景色*/
+.bcFFF{
+	background-color: #fff;
+}
+
+
+.marT44{
+	margin-top: 44px;
+}
+
+
+.mui-container {
+    background-color: #fff;
+    padding: 10px 15px;
+    }
+

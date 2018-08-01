@@ -1,0 +1,69 @@
+._nav dl {
+	margin-top: 15px;
+}
+
+._nav img {
+	width: 1rem;
+	height: 1rem;
+	margin: 0 auto;
+	display: block;
+}
+
+._nav dd {
+	text-align: center;
+	font-size: 14px;
+}
+/*公告轮播*/
+.swiper_wrap {
+	position: relative;
+	height: 60px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.swiper_wrap ul {
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+	float: right;
+	color: #444;
+	font-size: 14px;
+	margin-top: 1px;
+}
+
+.swiper_wrap li {
+	line-height: 30px;
+}
+
+.swiper_wrap .lt {
+	position: absolute;
+	left: -1px;
+	top: 7px;
+	font-family: "宋体";
+	font-weight: bold;
+	color: #AAAAAA;
+}
+
+.swiper_wrap .gt {
+	position: absolute;
+	right: 26px;
+	top: 7px;
+	font-family: "宋体";
+	font-weight: bold;
+	color: #AAAAAA;
+}
+
+.swiper_wrap .font_inner a {
+	color: #444;
+}
+
+.swiper_wrap a:hover {
+	color: #FA9101;
+}
+.l_side{
+	width:80px;
+}
+.r_side{
+	width: 20px;
+}
