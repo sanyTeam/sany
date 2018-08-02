@@ -6,7 +6,7 @@ body {
 	padding: 0px;
 }
 .mui-content{height: 100%;}
-
+* { touch-action: none; }
 
 *{box-sizing: border-box}
 html,body{
