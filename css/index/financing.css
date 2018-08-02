@@ -1,5 +1,5 @@
 body{
-	padding-top: 44px;
+	/*padding-top: 44px;*/
 }
 .rzzl{
 	padding: 0 15px;
@@ -26,4 +26,49 @@ body{
  	font-size: 14px;
  	height: 100%;
  	display: inline-block;
+}
+
+
+.headSpan{
+	font-size: 16px;
+}
+.mui-off-canvas-left, .mui-off-canvas-right{
+	background-color: #FFFFFF
+}
+#offCanvasSideScroll .mui-container{
+	margin-top: 50px;
+}
+.ffCanvasTit{
+	font-size: 16px;
+	font-weight: normal;
+}
+._item{
+	
+}
+
+
+/*单选*/
+input[checked]+label{
+	border: 1px solid red;
+}
+.active{
+	
+}
+._item .mui-col-xs-4{
+	margin: 5px;
+	background-color: #F2F2F5;
+	text-align: center;
+	font-size: 16px;
+	margin-right: 15px;
+}
+.s_tit{
+	margin-bottom: 11px;
+	font-size: 18px;
+	background-color: #fff!important;
+}
+.mui-table-view-cell.mui-active{
+	background-color: #fff!important;
+}
+.mui-table-view-cell:after{
+	height: 0;
 }

@@ -1,121 +1,288 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
 		<title>融资贷款</title>
-		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
-		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
-		<link rel="stylesheet" type="text/css" href="../../css/index/financing.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/index/financing.css" />
 		<script src="../../js/rem.js"></script>
 	</head>
+
 	<body>
-		<header class="mui-bar mui-bar-nav">
-			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">我的融资</h1>
-		</header>
-		<!--融资总览-->
-		<p class="bt bcFFF">融资总览</h3>
-		<div class="rzzl mui-demo-container bcFFF mui-text-center">
-			<div>
-				<p>本期应还总额</p>
-				<p>100000</p>
-				<p>逾期总期数 : 5</p>
-			</div>
-			<div class="_show">
-				<div class="flex flex-pack-justify">
-					<dl>
-					<dt>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<!--菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-right">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<header class="mui-bar mui-bar-nav flex  flex-pack-justify">
+							<span class="headSpan flex flex-align-center">筛选</span>
+							<span class="headSpan flex flex-align-center" id="offCanvasHide">×</span>
+						</header>
+					</div>
+					<div class="mui-container">
+						 <ul class="mui-table-view _item"> 
+					        <li class="mui-table-view-cell">
+					            <span class="s_tit">订单类型</span>
+					            <div class="mui-collapse-content">
+					                <div class="mui-row">
+					                	<div class="mui-col-xs-4 active">
+					                		保修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+					                </div>
+					            </div>
+					        </li>
+					        <li class="mui-table-view-cell mui-collapse">
+					            <a class="mui-navigate-right s_tit" href="#">联系人</a>
+					            <div class="mui-collapse-content">
+					                <div class="mui-row">
+					                	<div class="mui-col-xs-4 active">
+					                		保修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+					                </div>
+					            </div>
+					        </li>
+					        <li class="mui-table-view-cell mui-collapse">
+					            <a class="mui-navigate-right s_tit" href="#">设备类型</a>
+					            <div class="mui-collapse-content">
+					                <div class="mui-row">
+					                	<div class="mui-col-xs-4 active">
+					                		保修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div><div class="mui-col-xs-4">
+					                		维修
+										</div>
+										
+					                </div>
+					            </div>
+					        </li>
+					    </ul>
+					</div>
+				</div>
+			</aside>
+
+			<div class="mui-inner-wrap">
+
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+					<h1 class="mui-title">我的融资</h1>
+					<button class="mui-pull-right mui-btn mui-btn-grey mui-btn-xs" id="offCanvasShow">筛选</button>
+				</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+				<!--融资总览-->
+				<p class="bt bcFFF">融资总览</h3>
+					<div class="rzzl mui-demo-container bcFFF mui-text-center">
+						<div>
+							<p>本期应还总额</p>
+							<p>100000</p>
+							<p>逾期总期数 : 5</p>
+						</div>
+						<div class="_show">
+							<div class="flex flex-pack-justify">
+								<dl>
+									<dt>
 						<p>历史已还款</p>
 					</dt>
-					<dd>
-						<p>100000</p>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
+									<dd>
+										<p>100000</p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
 						<p>剩余未还</p>
 					</dt>
-					<dd>
-						<p>100000</p>
-					</dd>
-				</dl>
-				</div>
-				<div class="mui-demo-container">
-				<div id="demo1" class="mui-text-center">
-					<p class="mui-progressbar mui-progressbar-in" data-progress="20"><span></span></p>
-				</div>
+									<dd>
+										<p>100000</p>
+									</dd>
+								</dl>
+							</div>
+							<div class="mui-demo-container">
+								<div id="demo1" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in" data-progress="20"><span></span></p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<p class="bt">融资明细</h3>
+
+						<div class="list bcFFF">
+							<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+								<li class="mui-table-view-cell">
+									<div class="mui-table">
+										<div class="mui-table-cell mui-col-xs-6">
+											<h4 class="l_side mui-ellipsis">SY1A-A大型液压挖掘机</h4>
+											<h5>SY16C1234567</h5>
+											<p class="mui-h6 mui-ellipsis">本期应还：¥ 2000.00</p>
+											<p class="mui-h6 mui-ellipsis">本期已还：¥ 0.00</p>
+
+										</div>
+										<div class="mui-table-cell mui-col-xs-6 mui-text-right">
+											<h4 class="mui-ellipsis">
+		                		<i class="ovdue">逾期36天</i>
+		                	</h4>
+											<p class="mui-h5">50000</p>
+											<p class="mui-h6 mui-ellipsis">本期还款日：2018-07-11</p>
+											<p class="mui-h6 mui-ellipsis">下期还款日：2018-08-11</p>
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="mui-table">
+										<div class="mui-table-cell mui-col-xs-6">
+											<h4 class="l_side mui-ellipsis">SY1A-A大型液压挖掘机</h4>
+											<h5>SY16C1234567</h5>
+											<p class="mui-h6 mui-ellipsis">本期应还：¥ 2000.00</p>
+											<p class="mui-h6 mui-ellipsis">本期已还：¥ 0.00</p>
+
+										</div>
+										<div class="mui-table-cell mui-col-xs-6 mui-text-right">
+											<h4 class="mui-ellipsis">
+		                		<i class="ovdue">逾期36天</i>
+		                	</h4>
+											<p class="mui-h5">50000</p>
+											<p class="mui-h6 mui-ellipsis">本期还款日：2018-07-11</p>
+											<p class="mui-h6 mui-ellipsis">下期还款日：2018-08-11</p>
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="mui-table">
+										<div class="mui-table-cell mui-col-xs-6">
+											<h4 class="mui-ellipsis">SY1A-A大型液压挖掘机</h4>
+											<h5>SY16C1234567</h5>
+											<p class="mui-h6 mui-ellipsis">本期应还：¥ 2000.00</p>
+											<p class="mui-h6 mui-ellipsis">本期已还：¥ 0.00</p>
+
+										</div>
+										<div class="mui-table-cell mui-col-xs-6 mui-text-right">
+											<h4 class="mui-ellipsis">
+		                						<i class="ovdue">逾期36天</i>
+		                					</h4>
+											<p class="mui-h5">50000</p>
+											<p class="mui-h6 mui-ellipsis">本期还款日：2018-07-11</p>
+											<p class="mui-h6 mui-ellipsis">下期还款日：2018-08-11</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						</div>
+						<!-- off-canvas backdrop -->
+				<div class="mui-off-canvas-backdrop"></div>
 			</div>
-			</div>
-			
 		</div>
-		<p class="bt">融资明细</h3>
-			
-		<div class="list bcFFF">
-			<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
-		        <li class="mui-table-view-cell">
-		            <div class="mui-table">
-		                <div class="mui-table-cell mui-col-xs-6">
-		                    <h4 class="l_side mui-ellipsis">SY1A-A大型液压挖掘机</h4>
-		                    <h5>SY16C1234567</h5>
-		                    <p class="mui-h6 mui-ellipsis">本期应还：¥ 2000.00</p>
-		                    <p class="mui-h6 mui-ellipsis">本期已还：¥ 0.00</p>
-		                    
-		                </div>
-		                <div class="mui-table-cell mui-col-xs-6 mui-text-right">
-		                	<h4 class="mui-ellipsis">
-		                		<i class="ovdue">逾期36天</i>
-		                	</h4>
-		                    <p class="mui-h5">50000</p>
-		                    <p class="mui-h6 mui-ellipsis">本期还款日：2018-07-11</p>
-		                    <p class="mui-h6 mui-ellipsis">下期还款日：2018-08-11</p>
-		                </div>
-		            </div>
-		        </li>
-		        <li class="mui-table-view-cell">
-		            <div class="mui-table">
-		                <div class="mui-table-cell mui-col-xs-6">
-		                    <h4 class="l_side mui-ellipsis">SY1A-A大型液压挖掘机</h4>
-		                    <h5>SY16C1234567</h5>
-		                    <p class="mui-h6 mui-ellipsis">本期应还：¥ 2000.00</p>
-		                    <p class="mui-h6 mui-ellipsis">本期已还：¥ 0.00</p>
-		                    
-		                </div>
-		                <div class="mui-table-cell mui-col-xs-6 mui-text-right">
-		                	<h4 class="mui-ellipsis">
-		                		<i class="ovdue">逾期36天</i>
-		                	</h4>
-		                    <p class="mui-h5">50000</p>
-		                    <p class="mui-h6 mui-ellipsis">本期还款日：2018-07-11</p>
-		                    <p class="mui-h6 mui-ellipsis">下期还款日：2018-08-11</p>
-		                </div>
-		            </div>
-		        </li>
-		        <li class="mui-table-view-cell">
-		            <div class="mui-table">
-		                <div class="mui-table-cell mui-col-xs-6">
-		                    <h4 class="mui-ellipsis">SY1A-A大型液压挖掘机</h4>
-		                    <h5>SY16C1234567</h5>
-		                    <p class="mui-h6 mui-ellipsis">本期应还：¥ 2000.00</p>
-		                    <p class="mui-h6 mui-ellipsis">本期已还：¥ 0.00</p>
-		                    
-		                </div>
-		                <div class="mui-table-cell mui-col-xs-6 mui-text-right">
-		                	<h4 class="mui-ellipsis">
-		                		<i class="ovdue">逾期36天</i>
-		                	</h4>
-		                    <p class="mui-h5">50000</p>
-		                    <p class="mui-h6 mui-ellipsis">本期还款日：2018-07-11</p>
-		                    <p class="mui-h6 mui-ellipsis">下期还款日：2018-08-11</p>
-		                </div>
-		            </div>
-		        </li>
-		    </ul>
-		    <input type="text" name="" id="" value="" />
-		</div>
-		
-		
 		<script src="../../js/mui.min.js"></script>
 		<script src="../../js/index/rzdk.js"></script>
+		<script>
+			mui.init({
+				swipeBack: false //关闭右滑关闭功能
+			});
+			
+			
+			 //侧滑容器父节点
+			var offCanvasWrapper = mui('#offCanvasWrapper');
+			 //主界面容器
+			var offCanvasInner = offCanvasWrapper[0].querySelector('.mui-inner-wrap');
+			 //菜单容器
+			var offCanvasSide = document.getElementById("offCanvasSide");
+			 //Android暂不支持整体移动动画
+			if (!mui.os.android) {
+//				document.getElementById("move-togger").classList.remove('mui-hidden');
+				var spans = document.querySelectorAll('.android-only');
+				for (var i = 0, len = spans.length; i < len; i++) {
+					spans[i].style.display = "none";
+				}
+			}
+			 //移动效果是否为整体移动
+			var moveTogether = false;
+			 //侧滑容器的class列表，增加.mui-slide-in即可实现菜单移动、主界面不动的效果；
+			var classList = offCanvasWrapper[0].classList;
+			 //变换侧滑动画移动效果；
+			mui('.mui-input-group').on('change', 'input', function() {
+				if (this.checked) {
+					offCanvasSide.classList.remove('mui-transitioning');
+					offCanvasSide.setAttribute('style', '');
+					classList.remove('mui-slide-in');
+					classList.remove('mui-scalable');
+					switch (this.value) {
+						case 'main-move':
+							if (moveTogether) {
+								//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+								offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+								moveTogether = false;
+							}
+							break;
+						case 'main-move-scalable':
+							if (moveTogether) {
+								//仅主内容滑动时，侧滑菜单在off-canvas-wrap内，和主界面并列
+								offCanvasWrapper[0].insertBefore(offCanvasSide, offCanvasWrapper[0].firstElementChild);
+							}
+							classList.add('mui-scalable');
+							break;
+						case 'menu-move':
+							classList.add('mui-slide-in');
+							break;
+						case 'all-move':
+							moveTogether = true;
+							//整体滑动时，侧滑菜单在inner-wrap内
+							offCanvasInner.insertBefore(offCanvasSide, offCanvasInner.firstElementChild);
+							break;
+					}
+					offCanvasWrapper.offCanvas().refresh();
+				}
+			});
+			document.getElementById('offCanvasShow').addEventListener('tap', function() {
+				offCanvasWrapper.offCanvas('show');
+			});
+			document.getElementById('offCanvasHide').addEventListener('tap', function() {
+				offCanvasWrapper.offCanvas('close');
+			});
+			 //主界面和侧滑菜单界面均支持区域滚动；
+			mui('#offCanvasSideScroll').scroll();
+			mui('#offCanvasContentScroll').scroll();
+			 //实现ios平台的侧滑关闭页面；
+			if (mui.os.plus && mui.os.ios) {
+				offCanvasWrapper[0].addEventListener('shown', function(e) { //菜单显示完成事件
+					plus.webview.currentWebview().setStyle({
+						'popGesture': 'none'
+					});
+				});
+				offCanvasWrapper[0].addEventListener('hidden', function(e) { //菜单关闭完成事件
+					plus.webview.currentWebview().setStyle({
+						'popGesture': 'close'
+					});
+				});
+			}
+		</script>
 	</body>
+
 </html>

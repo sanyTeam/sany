@@ -122,7 +122,7 @@
 			mui('.list').on('tap','.mui-btn-danger',function(){
 				mui.confirm("确认完工吗","",["取消","确定"],function(e){
 					if (e.index == 1){
-						 console.log("已确认")
+						 mui.toast("成功")
 					}
 				})
 			})
