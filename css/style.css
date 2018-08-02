@@ -6,7 +6,9 @@ body {
 	padding: 0px;
 }
 .mui-content{height: 100%;}
-
+.login{
+	background-color: #CD5A53!important;
+}
 
 *{box-sizing: border-box}
 html,body{
@@ -14,7 +16,7 @@ html,body{
 }
 body{
     font-family:微软雅黑;
-    background-color: #CD5A53!important;
+    background-color: #FFFFFF!important;
 }
 html,body,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,input,button,textarea,menu{margin:0;padding:0;}
 header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
