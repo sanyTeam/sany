@@ -14,7 +14,6 @@ mui.plusReady(function() {
 	var parentVebView = self.opener();
 	//防止 父页面选项卡被输入法撑起
 	window.addEventListener('resize', function() {
-		alert(0)
 		var a = plus.android.invoke(plus.android.currentWebview(), "getHeight");
 		var b = plus.navigator.getStatusbarHeight();
 		var c = plus.screen.resolutionHeight;

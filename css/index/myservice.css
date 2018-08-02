@@ -1,0 +1,31 @@
+.mui-navigate-right:after, .mui-push-right:after{
+	right: 0;
+}
+
+
+
+.title{
+	font-family: PingFangSC-Regular;
+	font-size:18px;
+	color: #333333;
+	font-weight: normal;
+	letter-spacing: 0;
+	line-height: 16px;
+}
+.desc{
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #666666;
+	letter-spacing: 0;
+	line-height: 30px;
+}
+.list{
+	margin-bottom: 1rem;
+	background-color:inherit
+}
+.list>li{
+	background-color: #fff;
+}
+.list>li+li{
+	margin-top: .3rem;
+}
