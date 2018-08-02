@@ -1292,8 +1292,8 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
 .mui-btn-red
 {
     color: #fff;
-    border: 1px solid #dd524d;
-    background-color: #dd524d;
+    border: 1px solid #F55107;
+    background-color: #F55107;
 }
 .mui-btn-negative:enabled:active, .mui-btn-negative.mui-active:enabled,
 .mui-btn-danger:enabled:active,
@@ -1302,8 +1302,8 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
 .mui-btn-red.mui-active:enabled
 {
     color: #fff;
-    border: 1px solid #cf2d28;
-    background-color: #cf2d28;
+    border: 1px solid #F55107;
+    background-color: #F55107;
 }
 
 .mui-btn-royal,
@@ -1353,7 +1353,7 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
 }
 .mui-btn-outlined.mui-btn-negative, .mui-btn-outlined.mui-btn-danger, .mui-btn-outlined.mui-btn-red
 {
-    color: #dd524d;
+    color: #F55107;
 }
 .mui-btn-outlined.mui-btn-royal, .mui-btn-outlined.mui-btn-purple
 {
