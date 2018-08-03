@@ -30,3 +30,21 @@
     background-color: #D2514C!important;
 }
 
+
+
+.mui-bar-nav
+{
+    border-bottom: 0px!important;
+    border-top-left-radius: 0px!important;
+    border-top-right-radius: 0px!important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.mui-bar-nav
+{
+    top: 0;
+
+    -webkit-box-shadow: 0 0px 0px #ccc;
+            box-shadow: 0 0px 0px #ccc;
+}
