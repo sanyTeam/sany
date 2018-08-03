@@ -3,6 +3,7 @@
 }
 .topbar{
 	background-color: #333333!important;
+
 }
 .grayback{
 	background-color: #F5F5F5!important;
@@ -22,3 +23,10 @@
     background-color: #333333!important;
 
 }
+
+.redbtn{
+	color: #FFF;
+    border: 1px solid #D2514C!important;
+    background-color: #D2514C!important;
+}
+
