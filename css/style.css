@@ -6,7 +6,7 @@ body {
 	padding: 0px;
 }
 .mui-content{height: 100%;}
-
+* { touch-action: none; }
 
 *{box-sizing: border-box}
 html,body{
@@ -579,4 +579,44 @@ select::-ms-expand { display: none;}
 	padding:10px 15px;
 	/*background-color: red;*/
 	font-size: 16px;
+}
+/*头部导航右侧按钮*/
+.header-r-btn{
+	color: #999;
+	position: relative;
+	z-index: 20;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-size: 17px;
+	margin-right: -10px;
+    margin-left: -10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+/*小按钮*/
+.mui-btn-xs{
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+
+.conform_btn{
+	
+}
+.bor{
+	position: relative;
+	/*border-bottom: 1px solid #c8c7cc;*/
+	padding: 5px 0 10px 0;
+	margin-bottom: 11px;
+}
+.bor:after{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 15px;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #c8c7cc;
 }
