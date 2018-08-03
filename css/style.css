@@ -6,12 +6,6 @@ body {
 	padding: 0px;
 }
 .mui-content{height: 100%;}
-.login{
-	background-color: #D51212!important;
-}
-p::after {
-   content: none;
-}
 
 *{box-sizing: border-box}
 html,body{
