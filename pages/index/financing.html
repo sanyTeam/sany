@@ -1,121 +1,128 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
 		<title>融资贷款</title>
-		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css"/>
-		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
-		<link rel="stylesheet" type="text/css" href="../../css/index/financing.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/index/financing.css" />
 		<script src="../../js/rem.js"></script>
 	</head>
+
 	<body>
-		<header class="mui-bar mui-bar-nav">
-			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">我的融资</h1>
-		</header>
-		<!--融资总览-->
-		<p class="bt bcFFF">融资总览</h3>
-		<div class="rzzl mui-demo-container bcFFF mui-text-center">
-			<div>
-				<p>本期应还总额</p>
-				<p>100000</p>
-				<p>逾期总期数 : 5</p>
-			</div>
-			<div class="_show">
-				<div class="flex flex-pack-justify">
-					<dl>
-					<dt>
+			<div class="mui-content">
+
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+					<h1 class="mui-title">我的融资</h1>
+					<button class="mui-pull-right mui-btn mui-btn-grey mui-btn-xs" id="offCanvasShow">筛选</button>
+				</header>
+				<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+				<!--融资总览-->
+				<p class="bt bcFFF">融资总览</h3>
+					<div class="rzzl mui-demo-container bcFFF mui-text-center">
+						<div>
+							<p>本期应还总额</p>
+							<p>100000</p>
+							<p>逾期总期数 : 5</p>
+						</div>
+						<div class="_show">
+							<div class="flex flex-pack-justify">
+								<dl>
+									<dt>
 						<p>历史已还款</p>
 					</dt>
-					<dd>
-						<p>100000</p>
-					</dd>
-				</dl>
-				<dl>
-					<dt>
+									<dd>
+										<p>100000</p>
+									</dd>
+								</dl>
+								<dl>
+									<dt>
 						<p>剩余未还</p>
 					</dt>
-					<dd>
-						<p>100000</p>
-					</dd>
-				</dl>
-				</div>
-				<div class="mui-demo-container">
-				<div id="demo1" class="mui-text-center">
-					<p class="mui-progressbar mui-progressbar-in" data-progress="20"><span></span></p>
-				</div>
+									<dd>
+										<p>100000</p>
+									</dd>
+								</dl>
+							</div>
+							<div class="mui-demo-container">
+								<div id="demo1" class="mui-text-center">
+									<p class="mui-progressbar mui-progressbar-in" data-progress="20"><span></span></p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<p class="bt">融资明细</h3>
+
+						<div class="list bcFFF">
+							<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+								<li class="mui-table-view-cell">
+									<div class="mui-table">
+										<div class="mui-table-cell mui-col-xs-6">
+											<h4 class="l_side mui-ellipsis">SY1A-A大型液压挖掘机</h4>
+											<h5>SY16C1234567</h5>
+											<p class="mui-h6 mui-ellipsis">本期应还：¥ 2000.00</p>
+											<p class="mui-h6 mui-ellipsis">本期已还：¥ 0.00</p>
+
+										</div>
+										<div class="mui-table-cell mui-col-xs-6 mui-text-right">
+											<h4 class="mui-ellipsis">
+		                		<i class="ovdue">逾期36天</i>
+		                	</h4>
+											<p class="mui-h5">50000</p>
+											<p class="mui-h6 mui-ellipsis">本期还款日：2018-07-11</p>
+											<p class="mui-h6 mui-ellipsis">下期还款日：2018-08-11</p>
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="mui-table">
+										<div class="mui-table-cell mui-col-xs-6">
+											<h4 class="l_side mui-ellipsis">SY1A-A大型液压挖掘机</h4>
+											<h5>SY16C1234567</h5>
+											<p class="mui-h6 mui-ellipsis">本期应还：¥ 2000.00</p>
+											<p class="mui-h6 mui-ellipsis">本期已还：¥ 0.00</p>
+
+										</div>
+										<div class="mui-table-cell mui-col-xs-6 mui-text-right">
+											<h4 class="mui-ellipsis">
+		                		<i class="ovdue">逾期36天</i>
+		                	</h4>
+											<p class="mui-h5">50000</p>
+											<p class="mui-h6 mui-ellipsis">本期还款日：2018-07-11</p>
+											<p class="mui-h6 mui-ellipsis">下期还款日：2018-08-11</p>
+										</div>
+									</div>
+								</li>
+								<li class="mui-table-view-cell">
+									<div class="mui-table">
+										<div class="mui-table-cell mui-col-xs-6">
+											<h4 class="mui-ellipsis">SY1A-A大型液压挖掘机</h4>
+											<h5>SY16C1234567</h5>
+											<p class="mui-h6 mui-ellipsis">本期应还：¥ 2000.00</p>
+											<p class="mui-h6 mui-ellipsis">本期已还：¥ 0.00</p>
+
+										</div>
+										<div class="mui-table-cell mui-col-xs-6 mui-text-right">
+											<h4 class="mui-ellipsis">
+		                						<i class="ovdue">逾期36天</i>
+		                					</h4>
+											<p class="mui-h5">50000</p>
+											<p class="mui-h6 mui-ellipsis">本期还款日：2018-07-11</p>
+											<p class="mui-h6 mui-ellipsis">下期还款日：2018-08-11</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						</div>
 			</div>
-			</div>
-			
-		</div>
-		<p class="bt">融资明细</h3>
-			
-		<div class="list bcFFF">
-			<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
-		        <li class="mui-table-view-cell">
-		            <div class="mui-table">
-		                <div class="mui-table-cell mui-col-xs-6">
-		                    <h4 class="l_side mui-ellipsis">SY1A-A大型液压挖掘机</h4>
-		                    <h5>SY16C1234567</h5>
-		                    <p class="mui-h6 mui-ellipsis">本期应还：¥ 2000.00</p>
-		                    <p class="mui-h6 mui-ellipsis">本期已还：¥ 0.00</p>
-		                    
-		                </div>
-		                <div class="mui-table-cell mui-col-xs-6 mui-text-right">
-		                	<h4 class="mui-ellipsis">
-		                		<i class="ovdue">逾期36天</i>
-		                	</h4>
-		                    <p class="mui-h5">50000</p>
-		                    <p class="mui-h6 mui-ellipsis">本期还款日：2018-07-11</p>
-		                    <p class="mui-h6 mui-ellipsis">下期还款日：2018-08-11</p>
-		                </div>
-		            </div>
-		        </li>
-		        <li class="mui-table-view-cell">
-		            <div class="mui-table">
-		                <div class="mui-table-cell mui-col-xs-6">
-		                    <h4 class="l_side mui-ellipsis">SY1A-A大型液压挖掘机</h4>
-		                    <h5>SY16C1234567</h5>
-		                    <p class="mui-h6 mui-ellipsis">本期应还：¥ 2000.00</p>
-		                    <p class="mui-h6 mui-ellipsis">本期已还：¥ 0.00</p>
-		                    
-		                </div>
-		                <div class="mui-table-cell mui-col-xs-6 mui-text-right">
-		                	<h4 class="mui-ellipsis">
-		                		<i class="ovdue">逾期36天</i>
-		                	</h4>
-		                    <p class="mui-h5">50000</p>
-		                    <p class="mui-h6 mui-ellipsis">本期还款日：2018-07-11</p>
-		                    <p class="mui-h6 mui-ellipsis">下期还款日：2018-08-11</p>
-		                </div>
-		            </div>
-		        </li>
-		        <li class="mui-table-view-cell">
-		            <div class="mui-table">
-		                <div class="mui-table-cell mui-col-xs-6">
-		                    <h4 class="mui-ellipsis">SY1A-A大型液压挖掘机</h4>
-		                    <h5>SY16C1234567</h5>
-		                    <p class="mui-h6 mui-ellipsis">本期应还：¥ 2000.00</p>
-		                    <p class="mui-h6 mui-ellipsis">本期已还：¥ 0.00</p>
-		                    
-		                </div>
-		                <div class="mui-table-cell mui-col-xs-6 mui-text-right">
-		                	<h4 class="mui-ellipsis">
-		                		<i class="ovdue">逾期36天</i>
-		                	</h4>
-		                    <p class="mui-h5">50000</p>
-		                    <p class="mui-h6 mui-ellipsis">本期还款日：2018-07-11</p>
-		                    <p class="mui-h6 mui-ellipsis">下期还款日：2018-08-11</p>
-		                </div>
-		            </div>
-		        </li>
-		    </ul>
-		    <input type="text" name="" id="" value="" />
-		</div>
-		
-		
 		<script src="../../js/mui.min.js"></script>
-		<script src="../../js/index/rzdk.js"></script>
+		<script src="../../js/index/financing.js"></script>
 	</body>
+
 </html>
+

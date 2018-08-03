@@ -12,12 +12,89 @@
 		<script src="../../js/rem.js"></script>
 	</head>
 	<body>
+		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+			<!--菜单部分-->
+			<aside id="offCanvasSide" class="mui-off-canvas-right">
+				<div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<header class="mui-bar mui-bar-nav flex  flex-pack-justify">
+							<span class="headSpan flex flex-align-center">筛选</span>
+							<span class="headSpan flex flex-align-center" id="offCanvasHide">×</span>
+						</header>
+					</div>
+					<div class="mui-container">
+						 <ul class="mui-table-view _item"> 
+					        <li class="mui-table-view-cell">
+					            <span class="s_tit">订单类型</span>
+					            <div class="mui-collapse-content">
+					                <div class="mui-row">
+					                	<div class="mui-col-xs-4 active">
+					                		保修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+					                </div>
+					            </div>
+					        </li>
+					        <li class="mui-table-view-cell mui-collapse">
+					            <a class="mui-navigate-right s_tit" href="#">联系人</a>
+					            <div class="mui-collapse-content">
+					                <div class="mui-row">
+					                	<div class="mui-col-xs-4 active">
+					                		保修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+					                </div>
+					            </div>
+					        </li>
+					        <li class="mui-table-view-cell mui-collapse">
+					            <a class="mui-navigate-right s_tit" href="#">设备类型</a>
+					            <div class="mui-collapse-content">
+					                <div class="mui-row">
+					                	<div class="mui-col-xs-4 active">
+					                		保修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div>
+										<div class="mui-col-xs-4">
+					                		维修
+										</div><div class="mui-col-xs-4">
+					                		维修
+										</div>
+										
+					                </div>
+					            </div>
+					        </li>
+					    </ul>
+					</div>
+				</div>
+			</aside>
+			<div class="mui-inner-wrap">
 		<header class="mui-bar mui-bar-nav">
 		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
 		    <h1 class="mui-title">我的服务</h1>
-		    <a class="mui-pull-right header-r-btn">
+		    <a href="javascript:;" class="mui-pull-right header-r-btn" id="offCanvasShow">
 		    	筛选
-		    </a>
+		    </button>
 		</header>
 		<div class="mui-content">
 			<ul class="mui-table-view list">
@@ -116,13 +193,18 @@
 			    </li>
 			</ul>
 		</div>
+		<!-- off-canvas backdrop -->
+				<div class="mui-off-canvas-backdrop"></div>
+		</div>
+		</div>
 		<script src="../../js/jquery-2.14.js"></script>
 		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/index/myservice.js"></script>
 		<script type="text/javascript">
 			mui('.list').on('tap','.mui-btn-danger',function(){
 				mui.confirm("确认完工吗","",["取消","确定"],function(e){
 					if (e.index == 1){
-						 console.log("已确认")
+						 mui.toast("成功")
 					}
 				})
 			})
