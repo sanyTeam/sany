@@ -620,3 +620,14 @@ select::-ms-expand { display: none;}
     transform: scaleY(.5);
     background-color: #c8c7cc;
 }
+/*评分颜色*/
+.mui-icon-star{
+	color: #D9D9D9;
+}
+.mui-icon-star-filled{
+	color:#D51212;
+}
+
+.red{
+	color: #D51212;
+}

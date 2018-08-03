@@ -33,62 +33,6 @@
 }
 
 
-
-
-
-
-.headSpan{
-	font-size: 16px;
-}
-.mui-off-canvas-left, .mui-off-canvas-right{
-	background-color: #FFFFFF
-}
-#offCanvasSideScroll .mui-container{
-	margin-top: 50px;
-}
-.ffCanvasTit{
-	font-size: 16px;
-	font-weight: normal;
-}
-._item{
-	
-}
-
-
-/*单选*/
-input[checked]+label{
-	border: 1px solid red;
-}
-.active{
-	
-}
-.mui-off-canvas-wrap{
-	height: 100%;
-}
-._item .mui-col-xs-4{
-	margin: 5px;
-	background-color: #F2F2F5;
-	text-align: center;
-	font-size: 16px;
-	margin-right: 15px;
-	border-radius: 4px;
-}
-.s_tit{
-	margin-bottom: 11px;
-	font-size: 18px;
-	background-color: #fff!important;
-}
-.mui-table-view-cell.mui-active{
-	background-color: #fff!important;
-}
-.mui-table-view-cell:after{
-	height: 0;
-}
-._item .active{
-	background-color: royalblue;
-	color: #fff;
-}
-
 span.mui-icon {
 				font-size: 14px;
 				color: #007aff;
@@ -99,13 +43,20 @@ span.mui-icon {
 				/*height: 300px;*/
 				width: 100%;
 			}
-			.mui-content {
-				padding: 10px;
-			}
 			#bottomPopover{
 				bottom: 0!important;
 				left: 0!important;
 				border-radius: 0;
+			}
+			.mui-content>.mui-table-view:first-child{
+				margin-top: 0;
+			}
+			.detail_title{
+				padding: .1rem 0;
+			}
+			.bor:after{
+				right: -15px;
+				left: -15px;
 			}
 /*底部弹出框*/
 .popHeader{
