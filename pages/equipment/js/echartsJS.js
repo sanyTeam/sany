@@ -1,4 +1,4 @@
-			var getOption = function(chartType) {
+var getOption = function(chartType) {
 //				var chartOption = chartType == 'pie' ? {
 				var chartOption = {
 					legend: {

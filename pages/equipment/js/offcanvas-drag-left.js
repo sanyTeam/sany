@@ -1,4 +1,4 @@
-			mui.init({
+mui.init({
 				swipeBack: false,
 			});
 			 //侧滑容器父节点

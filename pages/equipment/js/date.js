@@ -1,4 +1,4 @@
-	function dateFn(ele){
+function dateFn(ele){
 		(function($) {
 			$.init();
 
