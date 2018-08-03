@@ -295,8 +295,7 @@ a
 {
     text-decoration: none;
 
-    color: #007aff;
-}
+    color: #007aff;}
 a:active
 {
     color: #0062cc;
@@ -1217,8 +1216,8 @@ button.mui-active:enabled,
 .mui-btn:enabled:active,
 .mui-btn.mui-active:enabled
 {
-    color: #fff;
-    background-color: #929292;
+    color: #C63F39;
+    background-color: #C63F39;
 }
 input[type='button']:disabled, input[type='button'].mui-disabled,
 input[type='submit']:disabled,
@@ -1291,9 +1290,9 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
 .mui-btn-danger,
 .mui-btn-red
 {
-    color: #fff;
-    border: 1px solid #F55107;
-    background-color: #F55107;
+    color: #D51212;
+    border: 1px solid #D51212;
+    background-color: #D51212;
 }
 .mui-btn-negative:enabled:active, .mui-btn-negative.mui-active:enabled,
 .mui-btn-danger:enabled:active,
@@ -1301,9 +1300,9 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
 .mui-btn-red:enabled:active,
 .mui-btn-red.mui-active:enabled
 {
-    color: #fff;
-    border: 1px solid #F55107;
-    background-color: #F55107;
+    color: #C63F39;
+    border: 1px solid #C63F39;
+    background-color: #C63F39;
 }
 
 .mui-btn-royal,
@@ -1353,7 +1352,7 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
 }
 .mui-btn-outlined.mui-btn-negative, .mui-btn-outlined.mui-btn-danger, .mui-btn-outlined.mui-btn-red
 {
-    color: #F55107;
+    color: #D51212;
 }
 .mui-btn-outlined.mui-btn-royal, .mui-btn-outlined.mui-btn-purple
 {
@@ -1361,7 +1360,7 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
 }
 .mui-btn-outlined.mui-btn-primary:enabled:active, .mui-btn-outlined.mui-btn-blue:enabled:active, .mui-btn-outlined.mui-btn-positive:enabled:active, .mui-btn-outlined.mui-btn-success:enabled:active, .mui-btn-outlined.mui-btn-green:enabled:active, .mui-btn-outlined.mui-btn-warning:enabled:active, .mui-btn-outlined.mui-btn-yellow:enabled:active, .mui-btn-outlined.mui-btn-negative:enabled:active, .mui-btn-outlined.mui-btn-danger:enabled:active, .mui-btn-outlined.mui-btn-red:enabled:active, .mui-btn-outlined.mui-btn-royal:enabled:active, .mui-btn-outlined.mui-btn-purple:enabled:active
 {
-    color: #fff;
+    color: #D51212;
 }
 
 .mui-btn-link
@@ -1481,7 +1480,7 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
     padding-left: 10px;
 
     border-bottom: 0;
-    background-color: #f7f7f7;
+    background-color: #333333;
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .85);
             box-shadow: 0 0 1px rgba(0, 0, 0, .85);
 

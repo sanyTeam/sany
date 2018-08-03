@@ -7,7 +7,10 @@ body {
 }
 .mui-content{height: 100%;}
 .login{
-	background-color: #CD5A53!important;
+	background-color: #D51212!important;
+}
+p::after {
+   content: none;
 }
 
 *{box-sizing: border-box}

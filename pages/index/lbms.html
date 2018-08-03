@@ -12,58 +12,88 @@
 	</head>
 	<body>
 		<header class="mui-bar mui-bar-nav">
-			<button type="button" class="mui-btn" style="float:left">地图模式</button>
-			 <ul class="mui-table-view" style="width:100px; height:30px;text-align:center; margin-left:auto; margin-right:auto;"> 
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left;" style="color: #333333"></a>
+			<a><font size="2;" color="#FFFFFF">返回</font></a>
+			 <ul class="mui-table-view" style="width:100px; height:30px;text-align:center; margin-top:10px; margin-left:auto; margin-right:auto;"> 
         			<li class="mui-table-view-cell mui-collapse">
-            			<a class="mui-navigate-right" href="#"><font size="2">全部</font></a>
+            			<a class="mui-navigate-right" href="#" style="margin-top:-30px; margin-left: -20px"><font size="2">全部</font></a>
             			<div class="mui-collapse-content">
                 			<p>面板1子内容</p>
             			</div>
         			</li>
     			</ul>
-			<button type="button" class="mui-btn" style="float: right; margin-top: -30px">筛选</button>
+			<button type="button" class="mui-btn" style="float: right; margin-top: -40px">筛选</button>
 		</header>
+		<button type="button" class="mui-btn" style="float:left">地图模式</button>
 		<!-- 列表从这里开始 -->
-		<ul class="mui-table-view">
-			<li class="mui-table-view-cell">
-        			<a class="mui-navigate-right"><img src="icon_syt16@2x.png" style="width:5%; height:5%"><font size="2"> SY16C微型液压挖掘机1</font>
-        			<p><font size="2"  style="margin-left:20px">SY16C001</font><span style="float:right"><font size="1">未工作</font></span></a>
-    			</li>
-    			<p style="margin-left:30px"><font size="1">
-   	 		设备位置：  湖南省长沙市玄武区泰宁街
-   	 		<br>昨日工作：  10小时</br>
-   	 		本周工作：  102小时
-   	 		<br>本月工作：  602小时</br></p>
-   	 		<p style="margin: 5mm;"
-		</ul>
 
-		<ul class="mui-table-view">
-			<li class="mui-table-view-cell">
-        			<a class="mui-navigate-right"><img src="icon_syt16c@2x.png" style="width:5%; height:5%">  <font size="2"> SY16C微型液压挖掘机1</font>
-        			<p><font size="2" style="margin-left:20px">SY16C001</font><span style="float:right"><font size="1">工作中</font></span></a>
-    			</li>
-    			<p style="margin-left:30px"><font size="1">
-   	 		设备位置：  湖南省长沙市玄武区泰宁街
-   	 		<br>昨日工作：  10小时</br>
-   	 		本周工作：  102小时
-   	 		<br>本月工作：  602小时</br></p>
-   	 		<p style="margin: 5mm;"
-		</ul>
-		<ul class="mui-table-view">
-    			<li class="mui-table-view-cell">
-        			<a class="mui-navigate-right"><img src="icon_sx2@2x.png" style="width:5%; height:5%"><font size="2"> SY16C微型液压挖掘机1</font>
-        			<p><font size="2" style="margin-left:20px;">SY16C001</font><span style="float:right"><font size="1">工作中</font></span></a>
-   	 		</li>
-   	 		<p style="margin-left:30px"><font size="1">
-   	 		设备位置：  湖南省长沙市玄武区泰宁街
-   	 		<br>昨日工作：  10小时</br>
-   	 		本周工作：  102小时
-   	 		<br>本月工作：  602小时</br></p>
-   	 		<p style="margin: 5mm;">
-   	 			
-		</ul>
-		</p>
-		<p style="margin-bottom:29mm"></p>
+    			<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+		        <li class="mui-table-view-cell">
+		            <div class="mui-table">
+		                <div class="mui-table-cell mui-col-xs-9">
+		                    <h4 class="mui-ellipsis"><img src="icon_syt16@2x.png" style="width:5%; height:5%"><font size="2"> SY16C微型液压挖掘机1</font></h4>
+		                    <h5>SY16C001</h5>
+		                    <p class="mui-h6 mui-ellipsis">设备位置：  湖南省长沙市玄武区泰宁街</p>
+		                    <p class="mui-h6 mui-ellipsis">昨日工作：  10小时</p>
+		                    <p class="mui-h6 mui-ellipsis">本周工作：  102小时</p>
+		                    <p class="mui-h6 mui-ellipsis">本月工作：  602小时</p>
+		                    
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-3 mui-text-right">
+		                	<h4 class="mui-ellipsis">
+		                		<span class="mui-icon mui-icon-arrowright"></span>
+		                	</h4>
+		                    <p class="mui-h5">未工作</p>
+		                </div>
+		            </div>
+		        </li>
+		    </ul>
+
+    			<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+		        <li class="mui-table-view-cell">
+		            <div class="mui-table">
+		                <div class="mui-table-cell mui-col-xs-9">
+		                    <h4 class="mui-ellipsis"><img src="icon_syt16c@2x.png" style="width:5%; height:5%"><font size="2"> SY16C微型液压挖掘机1</font></h4>
+		                    <h5>SY16C001</h5>
+		                    <p class="mui-h6 mui-ellipsis">设备位置：  湖南省长沙市玄武区泰宁街</p>
+		                    <p class="mui-h6 mui-ellipsis">昨日工作：  10小时</p>
+		                    <p class="mui-h6 mui-ellipsis">本周工作：  102小时</p>
+		                    <p class="mui-h6 mui-ellipsis">本月工作：  602小时</p>
+		                    
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-3 mui-text-right">
+		                	<h4 class="mui-ellipsis">
+		                		<span class="mui-icon mui-icon-arrowright"></span>
+		                	</h4>
+		                    <p class="mui-h5">工作中</p>
+		                </div>
+		            </div>
+		        </li>
+		    </ul>
+		    
+		    <ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+		        <li class="mui-table-view-cell">
+		            <div class="mui-table">
+		                <div class="mui-table-cell mui-col-xs-">
+		                    <h4 class="mui-ellipsis"><img src="icon_sx2@2x.png" style="width:5%; height:5%"><font size="2"> SY16C微型液压挖掘机1</font></h4>
+		                    <h5>SY16C001</h5>
+		                    <p class="mui-h6 mui-ellipsis">设备位置：  湖南省长沙市玄武区泰宁街</p>
+		                    <p class="mui-h6 mui-ellipsis">昨日工作：  10小时</p>
+		                    <p class="mui-h6 mui-ellipsis">本周工作：  102小时</p>
+		                    <p class="mui-h6 mui-ellipsis">本月工作：  602小时</p>
+		                    
+		                </div>
+		                <div class="mui-table-cell mui-col-xs-3 mui-text-right">
+		                	<h4 class="mui-ellipsis">
+		                		<span class="mui-icon mui-icon-arrowright"></span>
+		                	</h4>
+		                    <p class="mui-h5">工作中</p>
+		                </div>
+		            </div>
+		        </li>
+		    </ul>
+
+		<p style="margin-bottom: 45mm;"></p>
 		<div class="mui-card-footer" >
 			<span class="mui-icon mui-icon-home"></span>
 			<span class="mui-icon mui-icon-spinner-cycle mui-spin"></span>
