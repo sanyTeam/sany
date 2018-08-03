@@ -8,6 +8,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<title>服务订单详情</title>
 		<link rel="stylesheet" type="text/css" href="../../css/mui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/step.css"/>
 		<link rel="stylesheet" type="text/css" href="../../css/style.css" />
 		<link rel="stylesheet" type="text/css" href="../../css/index/myserviceDetail.css" />
 		
@@ -47,6 +48,7 @@
 			<div class="progress">
 				<h4 class="bt red">订单号：SYC16CW32343534343</h4>
 			</div>
+			<div id="steps"></div>
 		</div>
 		</div>
 		<!--底部弹出框 e-->
@@ -105,7 +107,6 @@
 				</div>
 			</div>
 			</div>
-		</div>
 		<!--底部弹出框 s-->
 		
 		
@@ -113,6 +114,21 @@
 		<script src="../../js/jquery-2.14.js "></script>
 		<script src="../../js/mui.min.js "></script>
 		<script src="../../js/feedback.js "></script>
+		<script src="../../js/step.js"></script>
 		<script src="../../js/index/myserviceDetail.js"></script>
+		
+		<script>
+			$(function () {
+		        initStep();
+		      });
+		
+		      function initStep() {
+		        $("#steps").step({
+		          stepNames: ['购买', '付款', '发货'],
+		          initStep: 1
+		        })
+		      }
+
+		</script>
 	</body>
 </html>

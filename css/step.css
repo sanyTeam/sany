@@ -1,0 +1,65 @@
+
+.progressbar {
+  font-family: montserrat, arial, verdana;
+  margin: 15px;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+  counter-reset: step;
+  z-index: 99;
+}
+
+.progressbar li {
+  list-style-type: none;
+  font-size: 9px;
+  float: left;
+  position: relative;
+}
+
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: #333;
+  background: white;
+  border-radius: 20px;
+  margin: 0 auto 5px auto;
+
+}
+
+.progressbar li:after {
+  content: '';
+  width: calc(100% - 20px);
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: calc((-100% + 20px) / 2);
+  top: 9px;
+}
+
+.progressbar li:before,.progressbar li:after {
+  -webkit-transition: all .3s .2s linear;
+  -moz-transition: all .3s .2s linear;
+  -ms-transition: all .3s .2s linear;
+  -o-transition: all .3s .2s linear;
+  transition: all .3s .2s linear;
+}
+
+
+.progressbar li:first-child:after {
+  content: none;
+}
+
+.progressbar li.active:before, .progressbar li.active:after {
+  background: #27AE60;
+  color: white;
+  -webkit-transition: all .3s .2s linear;
+  -moz-transition: all .3s .2s linear;
+  -ms-transition: all .3s .2s linear;
+  -o-transition: all .3s .2s linear;
+  transition: all .3s .2s linear;
+}
