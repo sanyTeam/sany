@@ -157,7 +157,7 @@ mui("#slider").slider({
 				activePage = targetPage;
 			} else {
 				//第四个tab 打开新窗口
-				plus.webview.open('pages/rzdk.html', 'new', {}, 'slide-in-right', 200);
+				plus.webview.open('"pages/index/financing.html"', 'new', {}, 'slide-in-right', 200);
 			}
 		});
 	});
@@ -241,3 +241,26 @@ function textSwiper() {
 }
 
 //数据请求 ---
+
+
+
+
+
+
+
+
+
+//测试跳转方法
+//mui(document).on("tap","a",function(){
+//	var id = this.getActiveAttrib('href')
+//})
+//function link(url){
+//	mui.openWindow({
+//		url: url,
+//		id:"detail"
+//		show: {
+//			aniShow: aniShow,
+//			duration: 300
+//		}
+//	});
+//}

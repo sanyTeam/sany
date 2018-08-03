@@ -3,7 +3,7 @@ var util = {
 		ACTIVE_COLOR: "#007aff",
 		NORMAL_COLOR: "#000",
 		subpages: [
-		"pages/index/rzdk.html"
+		"pages/index/financing.html"
 		]
 	},
 	/**

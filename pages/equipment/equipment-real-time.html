@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/mui.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+		<script src="../../js/rem.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+<style type="text/css">
+		header{display: flex;align-items: center;justify-content: center;position: relative;height:1.28rem;background-color: #333;}
+		#back{padding: 0;margin: 0;position: absolute;left: 0;color: #fff;}
+		.search-laber{width: 4.5rem;height: 0.56rem;position: relative;display: flex;align-items: center;}
+		#search-btn{width: 100%;height: 100%;padding: 0; margin: 0;padding-left: 0.29rem;box-sizing: border-box;margin-left: 0.3rem;
+					background-color: #939393;color: #fff;}
+		.rolate-icon{position:absolute; width: 8px;height: 8px;border-top: 1px solid #fff;border-right: 1px solid #FFFF;
+					transform: rotate(135deg);-webkit-transform: rotate(135deg);-moz-transform: rotate(135deg);right: 0.2rem;}
+		.fz30{font-size: 0.3rem;}
+		#mui-scroll{display: flex;align-items: center;}
+		.mui-segmented-control.mui-scroll-wrapper .mui-control-item{padding: 0; width: 1.8rem;height: 0.68rem;background-color: #F2F2F5;color: #222;
+					display: flex;align-items: center;justify-content: center;margin-right: 0.2rem;font-size: 0.28rem;
+					border-radius: 0.04rem;-webkit-border-radius: 0.04rem;-moz-border-radius: 0.04rem;}
+		#slider{height: 1.28rem;background-color: #FFFF;display: flex;align-items: center;padding-left: 0.3rem;box-sizing: border-box;}
+		.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active{
+			background: rgba(255,123,123,0.12);color: #FF5959;
+		}
+		#demo5{position: absolute;width: 66%;left: 0;right: 0;margin: auto; bottom: 0.1rem;}
+		#pullrefresh{position: absolute;top: 3rem;}
+		.left-line{display: flex;flex-direction: column;align-items: center;margin: 0 0.2rem 0 0.16rem;}
+		.mui-table-view-chevron .mui-table-view-cell{padding: 0;}
+		.mui-table-view{padding-top: 0.2rem;}
+		.mui-table-view-cell:after{display: none;}
+		.listContent{display: flex;align-items: center;padding: 0;margin: 0;height: 2.84rem;}
+		.round{width: 0.3rem;height: 0.3rem;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;background-color: #FF6B6B;}
+		.connecting-line{width: 1px; height: 2.52rem;border:0.01rem solid #D9D9D9;}
+		.right-content{height: 100%;}
+		.right-list{display: flex;align-items: center;width: 6.54rem; height: 1.92rem;background-color: #F7F7F7;
+					padding: 0.2rem;box-sizing: border-box;margin-top: 0.2rem;}
+		.right-list li{line-height: 0.56rem;}
+		.right-list li span{font-size: 0.2rem;color: #444;}
+		.midlle-line{width: 1px; height: 100%;border:0.01rem solid #D9D9D9;margin: 0 0.2rem;}
+		.date-top{margin-bottom: 0.2rem;}
+</style>	
+	<body>
+		<header>
+			<a  class="mui-action-back mui-icon mui-icon-left-nav" id="back"><span class="fz30">返回</span></a>
+			<laber class="search-laber">
+			<select name="" id="search-btn" >
+				<option value="">设备1</option>
+				<option value="">设备2</option>
+				<option value="">设备3</option>
+			</select>
+				<i class="rolate-icon"></i>
+			</laber>
+		</header>	
+
+		<div class="mui-content" style="padding-top:1.25rem;">
+			<div id="slider" class="mui-slider mui-fullscreen" style="top: 1.25rem;">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll" id="mui-scroll">
+						<a class="mui-control-item mui-active" href="#item1mobile" data-wid="tab-top-subpage-1.html">
+							实时
+						</a>
+						<a class="mui-control-item" href="#item2mobile" data-wid="tab-top-subpage-2.html">
+							历史
+						</a>
+						<a class="mui-control-item" href="#item3mobile" data-wid="tab-top-subpage-3.html">
+							报警
+						</a>
+						<a class="mui-control-item" href="#item4mobile" data-wid="tab-top-subpage-4.html">
+							服务
+						</a>
+						<a class="mui-control-item" href="#item5mobile" data-wid="tab-top-subpage-5.html">
+							售后
+						</a>
+						<a class="mui-control-item" href="#item5mobile" data-wid="tab-top-subpage-6.html">
+							售后
+						</a>
+						<a class="mui-control-item" href="#item5mobile" data-wid="tab-top-subpage-7.html">
+							售后
+						</a>
+						<a class="mui-control-item" href="#item5mobile" data-wid="tab-top-subpage-8.html">
+							售后
+						</a>
+					</div>
+				</div>
+
+			    <div id="demo5" class="mui-demo-container">
+					<p class="mui-progressbar mui-progressbar-success" data-progress="20"><span></span></p>
+				</div>
+			</div>
+			<!--下拉刷新容器-->
+			<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--数据列表-->
+				<div class="mui-table-view mui-table-view-chevron">
+					<section class="mui-table-view-cell listContent">
+						<div class="left-line">
+							<p class="round"></p>
+							<p class="connecting-line"></p>
+						</div>
+						<div class="right-content">
+							<p class="date-top">2018-07-30 20:24:45</p>
+							<div class="right-list">
+								<ul>
+									<li>
+										<span>功率(rpm)：</span>
+										<span>10kw／22000</span>
+									</li>
+									<li>
+										<span>电容(㎡)：</span>
+										<span>0.18</span>
+									</li>
+									<li>
+										<span>整机重量(kg)：</span>
+										<span>124750</span>
+									</li>
+								</ul>
+								<p class="midlle-line"></p>
+								<ul>
+									<li>
+										<span>功率(rpm)：</span>
+										<span>10kw／22000</span>
+									</li>
+									<li>
+										<span>电容(㎡)：</span>
+										<span>0.18</span>
+									</li>
+									<li>
+										<span>整机重量(kg)：</span>
+										<span>124750</span>
+									</li>
+									</ul>						
+									</div>
+								</div>
+							</section>
+					<section class="mui-table-view-cell listContent">
+						<div class="left-line">
+							<p class="round"></p>
+							<p class="connecting-line"></p>
+						</div>
+						<div class="right-content">
+							<p>2018-07-30 20:24:45</p>
+							<div class="right-list">
+								<ul>
+									<li>
+										<span>功率(rpm)：</span>
+										<span>10kw／22000</span>
+									</li>
+									<li>
+										<span>电容(㎡)：</span>
+										<span>0.18</span>
+									</li>
+									<li>
+										<span>整机重量(kg)：</span>
+										<span>124750</span>
+									</li>
+								</ul>
+								<p class="midlle-line"></p>
+								<ul>
+									<li>
+										<span>功率(rpm)：</span>
+										<span>10kw／22000</span>
+									</li>
+									<li>
+										<span>电容(㎡)：</span>
+										<span>0.18</span>
+									</li>
+									<li>
+										<span>整机重量(kg)：</span>
+										<span>124750</span>
+									</li>
+									</ul>						
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>    
+	</body>
+</html>
+<script src="../../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+			mui.init({
+				pullRefresh: {
+					container: '#pullrefresh',
+					down: {
+						callback: pulldownRefresh
+					},
+					up: {
+						contentrefresh: '正在加载...',
+						callback: pullupRefresh
+					}
+				}
+			});
+			/**
+			 * 下拉刷新具体业务实现
+			 */
+			function pulldownRefresh() {
+				setTimeout(function() {
+					var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					for (var i = cells.length, len = i + 3; i < len; i++) {
+						var section = document.createElement('section');
+						section.className = 'mui-table-view-cell listContent';
+						section.innerHTML = '<div class="left-line">'
+												+'<p class="round"></p>'
+												+'<p class="connecting-line"></p>'
+											+'</div>'
+											+'<div class="right-content">'
+												+'<p>2018-07-30 20:24:45</p>'
+												+'<div class="right-list">'
+													+'<ul>'
+														+'<li>'
+															+'<span>功率(rpm)：</span>'
+															+'<span>10kw／22000</span>'
+														+'</li>'
+														+'<li>'
+															+'<span>电容(㎡)：</span>'
+															+'<span>0.18</span>'
+														+'</li>'
+														+'<li>'
+															+'<span>整机重量(kg)：</span>'
+															+'<span>124750</span>'
+														+'</li>'
+													+'</ul>'
+													+'<p class="midlle-line"></p>'
+													+'<ul>'
+														+'<li>'
+															+'<span>功率(rpm)：</span>'
+															+'<span>10kw／22000</span>'
+														+'</li>'
+														+'<li>'
+															+'<span>电容(㎡)：</span>'
+															+'<span>0.18</span>'
+														+'</li>'
+														+'<li>'
+															+'<span>整机重量(kg)：</span>'
+															+'<span>124750</span>'
+														+'</li>'
+														+'</ul>'					
+														+'</div>'
+													+'</div>';
+						//下拉刷新，新纪录插到最前面；
+						table.insertBefore(section, table.firstChild);
+					}
+					mui('#pullrefresh').pullRefresh().endPulldownToRefresh(); //refresh completed
+				}, 1500);
+			}
+			var count = 0;
+			/**
+			 * 上拉加载具体业务实现
+			 */
+			function pullupRefresh() {
+				setTimeout(function() {
+					mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
+					var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					for (var i = cells.length, len = i + 5; i < len; i++) {
+						var section = document.createElement('section');
+						section.className = 'mui-table-view-cell listContent';
+						section.innerHTML = '<div class="left-line">'
+												+'<p class="round"></p>'
+												+'<p class="connecting-line"></p>'
+											+'</div>'
+											+'<div class="right-content">'
+												+'<p>2018-07-30 20:24:45</p>'
+												+'<div class="right-list">'
+													+'<ul>'
+														+'<li>'
+															+'<span>功率(rpm)：</span>'
+															+'<span>10kw／22000</span>'
+														+'</li>'
+														+'<li>'
+															+'<span>电容(㎡)：</span>'
+															+'<span>0.18</span>'
+														+'</li>'
+														+'<li>'
+															+'<span>整机重量(kg)：</span>'
+															+'<span>124750</span>'
+														+'</li>'
+													+'</ul>'
+													+'<p class="midlle-line"></p>'
+													+'<ul>'
+														+'<li>'
+															+'<span>功率(rpm)：</span>'
+															+'<span>10kw／22000</span>'
+														+'</li>'
+														+'<li>'
+															+'<span>电容(㎡)：</span>'
+															+'<span>0.18</span>'
+														+'</li>'
+														+'<li>'
+															+'<span>整机重量(kg)：</span>'
+															+'<span>124750</span>'
+														+'</li>'
+														+'</ul>'					
+														+'</div>'
+													+'</div>';
+						table.appendChild(section);
+					}
+				}, 1500);
+			}
+	
+</script>
+
