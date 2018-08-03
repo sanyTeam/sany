@@ -627,3 +627,7 @@ select::-ms-expand { display: none;}
 .mui-icon-star-filled{
 	color:#D51212;
 }
+
+.red{
+	color: #D51212;
+}

@@ -1,0 +1,92 @@
+.mui-navigate-right:after, .mui-push-right:after{
+	right: 0;
+}
+
+
+
+.title{
+	font-family: PingFangSC-Regular;
+	font-size:18px;
+	color: #333333;
+	font-weight: normal;
+	letter-spacing: 0;
+	line-height: 16px;
+}
+.desc{
+	font-family: PingFangSC-Regular;
+	font-size: 16px;
+	color: #666666;
+	letter-spacing: 0;
+	line-height: 30px;
+}
+.list{
+	margin-bottom: 1rem;
+	background-color:inherit;
+	height: 100%;
+	overflow: scroll;
+}
+.list>li{
+	background-color: #fff;
+}
+.list>li+li{
+	margin-top: .3rem;
+}
+
+
+span.mui-icon {
+				font-size: 14px;
+				color: #007aff;
+				margin-left: -15px;
+				padding-right: 10px;
+			}
+			.mui-popover {
+				/*height: 300px;*/
+				width: 100%;
+			}
+			#bottomPopover{
+				bottom: 0!important;
+				left: 0!important;
+				border-radius: 0;
+			}
+			.mui-content>.mui-table-view:first-child{
+				margin-top: 0;
+			}
+			.detail_title{
+				padding: .1rem 0;
+			}
+			.bor:after{
+				right: -15px;
+				left: -15px;
+			}
+/*底部弹出框*/
+.popHeader{
+	padding-top: .33rem;
+	padding-bottom: .33rem;
+}
+.mui-popover{
+	background-color: #fff
+}
+.mui-icon{
+	font-size: 28px;
+}
+.ul_evaluate li{
+	padding: .2rem;
+	border: 1px solid #D51212;
+	font-size: 16px;
+	margin: 0 .2rem;
+	color: #D51212;
+}
+.ul_evaluate li.active{
+	background-color: #D51212;
+	color: #fff;
+}
+.question{
+	height: 1.8rem;
+	font-size: 16px;
+	padding: 10px;
+}
+.btn_submit{
+	width: 100%;
+	padding: .13rem;
+	font-size: 18px;
+}
