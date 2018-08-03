@@ -78,3 +78,25 @@ if(mui.os.plus && mui.os.ios) {
 	});
 }
 //侧栏滑动  end
+
+
+
+
+//			侧栏选择条件   s
+mui('._item').on('tap','.mui-col-xs-4',function(){
+	
+	sectedFn(this,"active",".mui-col-xs-4");
+
+})
+
+function sectedFn(dom,_classNameActive,_dom){
+	$(dom).addClass(_classNameActive).siblings(_dom).removeClass(_classNameActive);
+}
+//			侧栏选择条件   e		
+
+
+//底部评价（服务）     s
+mui('.ul_evaluate').on('tap','li',function(){
+	$(this).hasClass('active') ? $(this).removeClass('active') : $(this).addClass('active')
+})
+//底部评价     e

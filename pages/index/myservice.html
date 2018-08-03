@@ -119,7 +119,7 @@
 			            </p>
 			        </div>
 			        <div class="clearfix">
-			        	<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-pull-right">确认完工</button>
+			        	<button type="button" class="mui-btn mui-btn-danger mui-btn-outlined mui-pull-right _achive">确认完工</button>
 			        </div>
 			    </li>
 			    <li class="mui-table-view-cell">
@@ -143,7 +143,7 @@
 			            </p>
 			        </div>
 			        <div class="clearfix">
-			        	<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined mui-pull-right">服务评价</button>
+			        	<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined mui-pull-right _evaluate">服务评价</button>
 			        </div>
 			    </li>
 			    <li class="mui-table-view-cell">
@@ -167,7 +167,7 @@
 			            </p>
 			        </div>
 			         <div class="clearfix">
-			        	<button type="button" class="mui-btn mui-btn-primary mui-btn-outlined mui-pull-right">服务评价</button>
+			        	<button  type="button" class="mui-btn mui-btn-primary mui-btn-outlined mui-pull-right">服务评价</button>
 			        </div>
 			    </li>
 			    <li class="mui-table-view-cell">
@@ -197,10 +197,78 @@
 				<div class="mui-off-canvas-backdrop"></div>
 		</div>
 		</div>
+		<!--底部弹出框 e-->
+		<div id="bottomPopover" class="mui-popover mui-popover-bottom">
+			<div class="">
+				<div class="mui-container popHeader">
+					<header class="flex  flex-pack-justify">
+						<span class="headSpan flex flex-align-center">服务评价</span>
+						<span class="headSpan flex flex-align-center s_close">关闭</span>
+				    </header>
+				</div>
+				<div class="relative">
+	        		<div class="mui-container">
+	        			<h4 class="title">
+	        			SYT16C微型液压挖掘机
+	        		</h4>
+	        		<div class="desc">
+	        			SYW737C12345678
+	        		</div>
+	        		</div>
+			     </div>
+			     <div class="relative">
+	        		<div class="mui-container">
+	        		<div class="desc">
+	        			订单类型：报修
+	        		</div>
+	        		<div class="desc">
+	        			报警状况：1001-显示文字描述你猜几个字
+	        		</div>
+	        		</div>
+			     </div>
+			     <div class="mui-container flex flex-pack-center">
+					<!--<div class="mui-inline">应用评分</div>-->
+					<div class="icons mui-inline" style="margin-left: 6px;">
+						<i data-index="1" class="mui-icon mui-icon-star"></i>
+						<i data-index="2" class="mui-icon mui-icon-star"></i>
+						<i data-index="3" class="mui-icon mui-icon-star"></i>
+						<i data-index="4" class="mui-icon mui-icon-star"></i>
+						<i data-index="5" class="mui-icon mui-icon-star"></i>
+					</div>
+				</div>
+				<div class="mui-container">
+					<ul class="ul_evaluate flex flex-pack-center">
+						<li>服务态度好</li>
+						<li>舒服技术好</li>
+						<li>价格合理</li>
+					</ul>
+				</div>
+				<div class="mui-container">
+				<div class="row mui-input-row">
+					<textarea  class="mui-input-clear question" placeholder=您的意见和评价(最多50字)"></textarea>
+				</div>
+				</div>
+				
+				<div>
+					<button class="mui-btn mui-btn-danger btn_submit">提交</button>
+				</div>
+			</div>
+		</div>
+		<!--底部弹出框 s-->
+		
+		
+		
+		
+		
+		
+		
+		
 		<script src="../../js/jquery-2.14.js"></script>
 		<script src="../../js/mui.min.js"></script>
+		<script src="../../js/feedback.js"></script>
 		<script src="../../js/index/myservice.js"></script>
 		<script type="text/javascript">
+			mui.init();
 			mui('.list').on('tap','.mui-btn-danger',function(){
 				mui.confirm("确认完工吗","",["取消","确定"],function(e){
 					if (e.index == 1){
@@ -209,6 +277,28 @@
 				})
 			})
 			
+	  //			点击服务评价弹出框
+			mui('.list').on('tap','._evaluate',function(){
+				mui('.mui-popover').popover('show');
+			})
+	  //			关闭底部弹框
+	  		document.querySelector('.s_close').addEventListener('tap',function(){
+	  			mui('.mui-popover').popover('hide');
+	  		})
+	  		
+	  		
+	  		
+			
+			
+			
+//			底部弹框关闭回调
+			mui('.mui-scroll-wrapper').scroll();
+			mui('body').on('shown', '.mui-popover', function(e) {
+				//console.log('shown', e.detail.id);//detail为当前popover元素
+			});
+			mui('body').on('hidden', '.mui-popover', function(e) {
+				//console.log('hidden', e.detail.id);//detail为当前popover元素
+			});
 		</script>
 	</body>
 </html>
