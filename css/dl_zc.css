@@ -26,3 +26,28 @@ input {
     margin: 0;
     padding: 0;
 }
+
+/*.mui-checkbox label
+{
+    display: inline-block;
+    float: none;
+
+    width: 100%;
+    padding-right: 20px;
+}
+
+.mui-checkbox input[type='checkbox']:before
+{
+    font-family: Microsoft YaHei;
+    font-size: px;
+    font-weight: normal;
+    line-height: 1;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 0;
+    background: none;
+
+    -webkit-font-smoothing: antialiased;
+} */
