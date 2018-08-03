@@ -59,9 +59,15 @@
 			document.getElementById('offCanvasShow').addEventListener('tap', function() {
 				offCanvasWrapper.offCanvas('show');
 			});
-			document.getElementById('offCanvasHide').addEventListener('tap', function() {
+			
+			//点击关闭侧边栏
+/*			document.getElementById('offCanvasHide').addEventListener('tap', function() {
 				offCanvasWrapper.offCanvas('close');
-			});
+			});*/
+			
+			
+			
+			
 			 //主界面和侧滑菜单界面均支持区域滚动；
 			mui('#offCanvasSideScroll').scroll();
 			mui('#offCanvasContentScroll').scroll();

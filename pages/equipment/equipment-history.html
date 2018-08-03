@@ -13,7 +13,7 @@
 		header{display: flex;align-items: center;justify-content: center;position: relative;height:1.28rem;background-color: #333;}
 		#back{padding: 0;margin: 0;position: absolute;left: 0.32rem;color: #fff;}
 		.search-laber{width: 4.5rem;height: 0.56rem;position: relative;display: flex;align-items: center;}
-		#search-btn{width: 100%;height: 100%;padding: 0; margin: 0;color: #fff;padding-left: 0.29rem;box-sizing: border-box;margin-left: 0.3rem;}
+		#search-btn{width: 100%;height: 100%;padding: 0; margin: 0;padding-left: 0.29rem;box-sizing: border-box;margin-left: 0.3rem;}
 		.rolate-icon{position:absolute; width: 8px;height: 8px;border-top: 1px solid #fff;border-right: 1px solid #FFFF;
 					transform: rotate(135deg);-webkit-transform: rotate(135deg);-moz-transform: rotate(135deg);right: 0.2rem;}
 		.fz30{font-size: 0.3rem;}
@@ -38,10 +38,40 @@
 		.mui-off-canvas-right{background-color: #fff;} 
 		.content-ul{padding: 0 0.4rem;box-sizing: border-box;}
 		.content-ul li{height: 0.98rem;border-bottom: 0.01rem solid #D9D9D9;font-size: 0.3rem;color: #666;
-					display: flex;align-items: center;}
-		.chart{width: 96%;margin: auto;height: 5.4rem;background-color: #fff;margin-top: 0.2rem;}			
+					display: flex;align-items: center;position: relative;}
+		/*.content-ul li input[type=checkbox]{visibility: hidden;}*/			
+		.chartContent,.chart{width: 96%;margin: auto;height: 5.4rem;background-color: #fff;margin-top: 0.2rem;}			
+		#lineChart div{width: 100% !important;height: 100% !important;}
+		/*#lineChart div canvas{height: 200px !important;}*/
+		.select-icon{position: absolute;right: 0.3rem;width: 0.34rem;height: 0.23rem;background:url(../../images/select.png)no-repeat;background-size: 100% 100%;
+						display: none;}
+		.select_active{display: block;}				
+		label{display: inline-block;width: 100%;height: 100%;display: flex;align-items: center;}
+		
+		/*多项选择*/
+		.demo--label .demo--radio {
+	display: none
+}
+
+.demo--radioInput {
+
+	position: absolute;right: 0.3rem;width: 0.34rem;height: 0.23rem;	
+}
+
+.demo--radio:checked+.checkImg .demo--radioInput {
+	background:url(../../images/select.png)no-repeat;
+	background-size: 100% 100%
+}
+
+.demo--checkbox.demo--radioInput,
+.demo--radio:checked+.demo--checkbox.demo--radioInput:after {
+	border-radius: 0
+}
+
+		
 	</style>
 	<body>
+
 		<!--侧滑菜单容器-->
 		<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">		
 		<!--菜单部分-->
@@ -55,20 +85,33 @@
 						</p>
 						<ul class="content-ul">
 							<li>
-								<span>油压</span>
-								<i></i>
+								<label class="demo--label">
+									<span>油压</span>
+									<input class="demo--radio fl" type="checkbox" name="radio1" id="" value="油压" />
+									<p class="fl checkImg"><span class="demo--radioInput"></span></p>
+								</label>
 							</li>
 							<li>
-								<span>油温</span>
-								<i></i>
+								<label class="demo--label">
+									<span>油温</span>
+									<input class="demo--radio fl" type="checkbox" name="radio2" id="" value="油温" />
+									<p class="fl checkImg"><span class="demo--radioInput"></span></p>
+								</label>								
 							</li>
 							<li>
-								<span>电流</span>
-								<i></i>
+								<label class="demo--label">
+									<span>电流</span>
+									<input class="demo--radio fl" type="checkbox" name="radio3" id="" value="电流" />
+									<p class="fl checkImg"><span class="demo--radioInput"></span></p>
+								</label>								
+
 							</li>
 							<li>
-								<span>功率</span>
-								<i></i>
+								<label class="demo--label">
+									<span>电压</span>
+									<input class="demo--radio fl" type="checkbox" name="radio4" id="" value="电压" />
+									<p class="fl checkImg"><span class="demo--radioInput"></span></p>
+								</label>	
 							</li>
 						</ul>
 					</div>
@@ -79,9 +122,15 @@
 		<header>
 			<a  class="mui-action-back mui-icon mui-icon-left-nav" id="back"><span class="fz30">返回</span></a>
 			<laber class="search-laber">
-				<input type="text" value="" placeholder="SY16C微型液压挖掘机..." id="search-btn"/>
+				<!--<input type="text" value="" placeholder="SY16C微型液压挖掘机..." id="search-btn"/>-->
+			<select name="" id="search-btn" >
+				<option value="">设备1</option>
+				<option value="">设备2</option>
+				<option value="">设备3</option>
+			</select>
 				<i class="rolate-icon"></i>
 			</laber>
+
 		</header>
 		<div class="mui-content" style="padding-top:1.25rem;">
 			<div id="slider" class="mui-slider mui-fullscreen" style="top: 1.25rem;">
@@ -123,13 +172,12 @@
 			        <li class="mui-table-view-cell">
 			            <a class="mui-navigate-right">
 			                	<span>监控属性</span>
-			                	<input type="text" name="" id="offCanvasShow" value="" placeholder="油压/油温" readonly="readonly"/>
+			                	<input type="text" name="" id="offCanvasShow" value="" readonly="readonly"/>
 			            </a>
 			        </li>
 			        <li class="mui-table-view-cell">
 			            <a class="mui-navigate-right">
 			                 <span>开始时间</span>
-			                
 			                 <input type="text" data-options='{}' class="" id="date1" placeholder="2018-09-13  12:34:56" readonly="readonly"/>
 			            </a>
 			        </li>
@@ -140,13 +188,8 @@
 			            </a>
 			        </li>
 			    </ul>
-				<div class="chart">
-				<!--<h5>柱图示例</h5>
-				<div class="chart" id="barChart"></div>-->
-				<h5>线图示例</h5>
-				<div class="chart" id="lineChart"></div>
-				<!--<h5>饼图示例</h5>
-				<div class="chart" id="pieChart"></div>-->
+				<div class="chartContent">
+					<div class="chart" id="lineChart"></div>
 				</div>
 
 			</div>    
@@ -162,7 +205,7 @@
 <script src="js/date.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/echartsJS.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	
+	$("#offCanvasShow").val("");
 	mui('#mui-scroll').on('click','.mui-control-item',function(){
 		console.log($(this).index())
 	})
@@ -170,6 +213,31 @@
 	mui("#demo5 .mui-progressbar").each(function () {
 		mui(this).progressbar({progress:this.getAttribute("data-progress")}).show();
 	});
+	
+	document.getElementById('offCanvasHide').addEventListener('tap', function() {
+		var monitoring_txt = "";
+		$("#offCanvasShow").val("");
+		console.log("内容是："+$("#offCanvasShow").val())
+		//获取checkbox是否被选中
+		var checks = $(".demo--radio");
+		for(var i=0;i<checks.length;i++){
+			console.log(checks[i].checked)
+			if(checks[i].checked==true){
+				monitoring_txt += checks[i].value +'/'
+			}
+		}
+		var final_txt = monitoring_txt.substring(0,monitoring_txt.length-1)
+		$("#offCanvasShow").val(final_txt);
+		
+		setTimeout(function(){
+	        $('#search-btn').css('pointer-events', 'auto');
+	    }, 400);
+
+		offCanvasWrapper.offCanvas('close');
+	});
+	
+	
+	
 			
 //时间插件
 var date1 = document.getElementById("date1");
