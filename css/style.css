@@ -7,13 +7,14 @@ body {
 }
 .mui-content{height: 100%;}
 
+
 *{box-sizing: border-box}
 html,body{
     height: 100%!important;
 }
 body{
     font-family:微软雅黑;
-    background-color: #FFFFFF!important;
+    background-color: #f5f5f5!important;
 }
 html,body,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,input,button,textarea,menu{margin:0;padding:0;}
 header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
@@ -35,10 +36,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{color:#a0a
 input:-moz-placeholder, textarea:-moz-placeholder{color:#a0a0a0;}
 input::-moz-placeholder, textarea::-moz-placeholder{color:#a0a0a0;}
 input:-ms-input-placeholder, textarea:-ms-input-placeholder{color:#a0a0a0;}
-form {
-    width: 300px;
-    margin: 0 auto;
-}
+
 img {
     border: none;
 }
@@ -558,13 +556,12 @@ select::-ms-expand { display: none;}
     overflow: auto;
 }
 
+/*-----------------@zdw----------*/
 
 /*背景色*/
 .bcFFF{
 	background-color: #fff;
 }
-
-
 .marT44{
 	margin-top: 44px;
 }
@@ -574,4 +571,12 @@ select::-ms-expand { display: none;}
     background-color: #fff;
     padding: 10px 15px;
     }
-
+.container{
+	padding: 0 15px;
+}
+/*小标题*/   
+.bt{
+	padding:10px 15px;
+	/*background-color: red;*/
+	font-size: 16px;
+}
