@@ -1,0 +1,50 @@
+.login{
+	background-color: #D51212!important;
+}
+.topbar{
+	background-color: #333333!important;
+
+}
+.grayback{
+	background-color: #F5F5F5!important;
+}
+
+.cyanbadge{
+	background-color: #D7FFF8!important;
+}
+
+.graynav{
+	background-color: #484848!important;
+}
+
+.custombtn{
+    color: #FFF;
+    border: 1px solid #333333!important;
+    background-color: #333333!important;
+
+}
+
+.redbtn{
+	color: #FFF;
+    border: 1px solid #D2514C!important;
+    background-color: #D2514C!important;
+}
+
+
+
+.mui-bar-nav
+{
+    border-bottom: 0px!important;
+    border-top-left-radius: 0px!important;
+    border-top-right-radius: 0px!important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.mui-bar-nav
+{
+    top: 0;
+
+    -webkit-box-shadow: 0 0px 0px #ccc;
+            box-shadow: 0 0px 0px #ccc;
+}

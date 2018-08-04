@@ -1,0 +1,53 @@
+.login{
+	background-color: #D51212!important;
+}
+.topbar{
+	background-color: #D51212!important;
+	-webkit-box-shadow: none;
+       box-shadow: none;
+}
+.grayback{
+	background-color: #F5F5F5!important;
+}
+
+.redbtn{
+	color: #FFF;
+    border: 1px solid #D72F2F!important;
+    background-color: #D72F2F!important;
+}
+
+img{
+    height: 50px;
+    vertical-align: middle;
+}
+input {
+	font:15px/1.5 "Microsoft YaHei",SimSun;color:#333;outline:0;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+/*.mui-checkbox label
+{
+    display: inline-block;
+    float: none;
+
+    width: 100%;
+    padding-right: 20px;
+}
+
+.mui-checkbox input[type='checkbox']:before
+{
+    font-family: Microsoft YaHei;
+    font-size: px;
+    font-weight: normal;
+    line-height: 1;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 0;
+    background: none;
+
+    -webkit-font-smoothing: antialiased;
+} */
