@@ -1,0 +1,51 @@
+.topbar{
+	background-color: #333333!important;
+
+}
+.grayback{
+	background-color: #F5F5F5!important;
+}
+
+.title{
+	font-size: 17px;
+    font-weight: 500;
+    line-height: 44px;
+
+    position: absolute;
+
+    display: block;
+
+    width: 100%;
+    margin: 0 -10px;
+    padding: 0;
+
+    text-align: center;
+    white-space: nowrap;
+
+    color: #ffffff!important;
+    
+    right: 40px;
+    left: 40px;
+
+    display: inline-block;
+    overflow: hidden;
+
+    width: auto;
+    margin: 0;
+
+    text-overflow: ellipsis;
+}
+
+.font{
+	color: #BE2726!important;
+	size: "4"!important;
+	text-align: center!important;
+	font-weight:bold;
+}
+
+.sfont {
+	color: #444444!important;
+	size: "1"!important;
+	font-weight:bold;
+}
+
